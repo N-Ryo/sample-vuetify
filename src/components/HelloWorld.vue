@@ -1,92 +1,268 @@
 <template>
-  <v-container>
-    <v-layout
-      text-center
-      wrap
-    >
-      <v-flex xs12>
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        ></v-img>
-      </v-flex>
+  <div>
+    <v-container class="plan-list">
+      <v-layout text-center>
+        <v-flex xs3>
+          <v-card>
+            <v-card-title class="plan-title-bg">
+              <v-layout text-center>
+                <v-flex class="plan-title">
+                  <p>Free</p>
+                  <p class="title-description">テスト向け</p>
+                </v-flex>
+              </v-layout>
+            </v-card-title>
+            <v-card-text class="plan-price">
+              <v-layout text-center>
+                <v-flex md6 class="plan-title">
+                  <section>
+                  <p>月額課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+                <v-flex md6 class="plan-title" style="border-left: 3px solid;">
+                  <section>
+                  <p>従量課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+              </v-layout>
+            </v-card-text>
+            <v-card-actions>
+              <v-layout text-center>
+                <v-flex md6 offset-md-3>
+                  <v-btn color="success" depressed small>Normal</v-btn>
+                </v-flex>
+              </v-layout>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+        <v-flex xs3>
+          <v-card>
+            <v-card-title class="plan-title-bg">
+              <v-layout text-center>
+                <v-flex class="plan-title">
+                  <p>Free</p>
+                  <p class="title-description">サイト埋め込み向け</p>
+                </v-flex>
+              </v-layout>
+            </v-card-title>
+            <v-card-text class="plan-price">
+              <v-layout text-center>
+                <v-flex md6 class="plan-title">
+                  <section>
+                    <p>月額課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+                <v-flex md6 class="plan-title" style="border-left: 3px solid;">
+                  <section>
+                  <p>従量課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+              </v-layout>
+            </v-card-text>
+            <v-card-actions>
+              <v-layout text-center>
+                <v-flex md6 offset-md-3>
+                  <v-btn color="success" depressed small>Normal</v-btn>
+                </v-flex>
+              </v-layout>
+            </v-card-actions>
 
-      <v-flex mb-4>
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
-        </p>
-      </v-flex>
+          </v-card>
+        </v-flex>
+        <v-flex xs3>
+          <v-card>
+            <v-card-title class="plan-title-bg">
+              <v-layout text-center>
+                <v-flex class="plan-title">
+                  <p>Prime</p>
+                  <p class="title-description">広告配信向け</p>
+                </v-flex>
+              </v-layout>
+            </v-card-title>
+            <v-card-text class="plan-price">
+              <v-layout text-center>
+                <v-flex md6 class="plan-title">
+                  <section>
+                  <p>月額課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+                <v-flex md6 class="plan-title" style="border-left: 3px solid;">
+                  <section>
+                  <p>従量課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+              </v-layout>
+            </v-card-text>
+            <v-card-actions>
+              <v-layout text-center>
+                <v-flex md6 offset-md-3>
+                  <v-btn color="success" depressed small>Normal</v-btn>
+                </v-flex>
+              </v-layout>
+            </v-card-actions>
 
-      <v-flex
-        mb-5
-        xs12
-      >
-        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
+          </v-card>
+        </v-flex>
+        <v-flex xs3>
+          <v-card>
+            <v-card-title class="plan-title-bg">
+              <v-layout text-center>
+                <v-flex class="plan-title">
+                  <p>Pro</p>
+                  <p class="title-description">大規模広告配信向け</p>
+                </v-flex>
+              </v-layout>
+            </v-card-title>
+            <v-card-text class="plan-price">
+              <v-layout text-center>
+                <v-flex md6 class="plan-title">
+                  <section>
+                  <p>月額課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+                <v-flex md6 class="plan-title" style="border-left: 3px solid;">
+                  <section>
+                  <p>従量課金</p>
+                  </section>
+                  <section>
+                  </section>
+                </v-flex>
+              </v-layout>
 
-        <v-layout justify-center>
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-layout>
-      </v-flex>
+              <v-layout text-center>
+                <v-flex>
+                  <p style="font-weight: 700;">お問い合わせください</p>
+                  <p style="font-size: 70%;">※クリックすると、<br>フォームを別タブで表示します。</p>
+                </v-flex>
+              </v-layout>
+            </v-card-text>
+            <v-card-actions>
+              <v-layout text-center>
+                <v-flex md6 offset-md-3>
+                  <v-btn color="error" depressed small>お問い合わせ</v-btn>
+                </v-flex>
+              </v-layout>
+            </v-card-actions>
 
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ link.text }}
-          </a>
-        </v-layout>
-      </v-flex>
-
-      <v-flex
-        xs12
-        mb-5
-      >
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
-        <v-layout justify-center>
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
-        </v-layout>
-      </v-flex>
-    </v-layout>
-  </v-container>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    <v-dialog v-model="dialog" width="900" >
+      <template v-slot:activator="{on}">
+        <span v-on="on">Open Dialog</span>
+      </template>
+      <v-card>
+        <v-simple-table fixed-header>
+          <thead>
+            <tr>
+              <th colspan="2" class="text-center">Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="item in desserts" :key="item.name" class="text-center">
+              <td width="50%">{{ item.name }}</td>
+              <td width="50%">{{ item.calories }}</td>
+            </tr>
+          </tbody>
+        </v-simple-table>
+      </v-card>
+    </v-dialog>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+  tr:nth-child(odd):hover {
+    background-color: #E1E1E1 !important;
+  }
+  tr:nth-child(odd) {
+    background-color: #E1E1E1;
+  }
+  tr:nth-child(even):hover {
+    background-color: #5d5d5d !important;
+  }
+  tr:nth-child(even) {
+    background-color: #5d5d5d;
+  }
+  .plan-list p {
+    margin: 0;
+    color: rgba(0,0,0,.87) !important;
+  }
+  .plan-title {
+    font-weight: 700;
+  }
+  .title-description {
+    font-size: 70%;
+  }
+  .plan-title-bg {
+    background-color: #E1E1E1;
+  }
+  .plan-price {
+    padding: 0;
+  }
+</style>
 
 <script>
 export default {
-  data: () => ({
+  data() {
+    return {
+        desserts: [
+          {
+            name: 'Frozen Yogurt',
+            calories: 159,
+          },
+          {
+            name: 'Ice cream sandwich',
+            calories: 237,
+          },
+          {
+            name: 'Eclair',
+            calories: 262,
+          },
+          {
+            name: 'Cupcake',
+            calories: 305,
+          },
+          {
+            name: 'Gingerbread',
+            calories: 356,
+          },
+          {
+            name: 'Jelly bean',
+            calories: 375,
+          },
+          {
+            name: 'Lollipop',
+            calories: 392,
+          },
+          {
+            name: 'Honeycomb',
+            calories: 408,
+          },
+          {
+            name: 'Donut',
+            calories: 452,
+          },
+          {
+            name: 'KitKat',
+            calories: 518,
+          },
+        ],
+    dialog: false,
     ecosystem: [
       {
         text: 'vuetify-loader',
@@ -137,6 +313,6 @@ export default {
         href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
       },
     ],
-  }),
+  }},
 };
 </script>
